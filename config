@@ -221,12 +221,12 @@ ngx_feature_test="lua_State *L = luaL_newstate();
 
 . auto/feature
 
-if [ $ngx_found = no ]; then
-    cat << END
-    $0: error: unsupported LuaJIT build; ngx_http_lua_module requires LuaJIT with FFI enabled.
-END
-    exit 1
-fi
+-- if [ $ngx_found = no ]; then
+--     cat << END
+--     $0: error: unsupported LuaJIT build; ngx_http_lua_module requires LuaJIT with FFI enabled.
+-- END
+--     exit 1
+-- fi
 
 # ----------------------------------------
 
